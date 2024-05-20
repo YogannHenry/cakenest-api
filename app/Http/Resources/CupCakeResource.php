@@ -22,6 +22,9 @@ class CupCakeResource extends JsonResource
             'quantity' => $this->quantity,
             'isAvailable' => $this->is_available,
             'isAdvertised' => $this->is_advertised,
+
+
         ];
+
     }
 }

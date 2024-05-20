@@ -44,7 +44,22 @@ class User extends Authenticatable
             'email_verified_at' => 'datetime',
             'password' => 'hashed',
         ];
+
+
     }
+
+    public function IsAdmin()
+    {
+    if ($this->is_admin) {
+        dd($this->is_admin);
+        return true;
+
+    }else{
+        return false;
+    }
+    }
+
+
 
     // public function orders()
     // {
